@@ -29,8 +29,7 @@
 	[
 		"webRequest",
 		"webRequestBlocking",
-		"http://tide.com/*/*",
-		"https://tide.com/*/*",
+		"*://tide.com/*",
 		"background"
 	]
 }
