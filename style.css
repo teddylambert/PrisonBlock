@@ -16,3 +16,28 @@ p.warn {
 	font-style: italic;
 	font-family: Verdana, Geneva, sans-serif;
 }
+
+div {
+	text-align: center;
+}
+
+button.but {
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	transition-duration: 0.4s;
+	
+
+}
+
+.but:hover {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
