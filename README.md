@@ -17,6 +17,16 @@ TODO
 # Safari Version
 TODO
 
+# TODO
+1. Add actual logo
+2. Add company list
+3. Add all company domains to manifest
+4. Add all company domains to intercept background function
+5. Add all companies to word replace
+6. Add README about what happens when a new company is added
+7. Clean up manifest (find out what doesn't need to be there)
+8. Add html and css to subfolder
+9. Add javascript to src subfolder
 # Acknowledgements
 The idea and initial company list are all thanks to Ella Lambert. I only dealt with helping turn the idea into an implementable reality.
 

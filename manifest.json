@@ -30,6 +30,7 @@
 		"webRequest",
 		"webRequestBlocking",
 		"*://tide.com/*",
+		"*://bountytowels.com/*",
 		"background"
 	]
 }
