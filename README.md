@@ -3,14 +3,14 @@ A Cloud-To-Butt look-alike for companies that use prison labor
 
 The premise is simple--any companies that use prison labor have their name changed to "INSERT STATEMENT HERE" any time it appears on a webpage".
 
-If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at teddy.lambert@gatech.edu or, if you know git, create a pull request and add the company to the `companies.txt` file so we can review the addition!"
+If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at teddy.lambert@gatech.edu or, if you know git, create a pull request and add the company to the `companies.txt` file so we can review the addition!
 
 Thanks!
 
 # Installation Instructions
 TODO
 
-#Safari Version
+# Safari Version
 TODO
 
 # Acknowledgements
