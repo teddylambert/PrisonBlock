@@ -25,8 +25,10 @@ TODO
 5. Add all companies to word replace
 6. Add README about what happens when a new company is added
 7. Clean up manifest (find out what doesn't need to be there)
-8. Add html and css to subfolder
+8. Add how to use
 9. Add javascript to src subfolder
+10. Add future feature section
+	- Add custom warning box to future features
 # Acknowledgements
 The idea and initial company list are all thanks to Ella Lambert. I only dealt with helping turn the idea into an implementable reality.
 
