@@ -12,4 +12,14 @@ function interceptRequest(request)
   }
 }
 
+function enterFunc() {
+	alert('test')
+}
+
+$(document).ready(function () {
+	$("#enterButton").click(enterFunc);
+});
+
 chrome.webRequest.onBeforeRequest.addListener(interceptRequest, {urls: ["*://tide.com/*", "*://bountytowels.com/*"]}, ['blocking']);
+
+
