@@ -10,7 +10,7 @@
 	},
 	"background":
 	{
-		"scripts": ["jquery.min.js", "background.js"],
+		"scripts": ["background.js"],
 		"persistent": true
 	},
 	"content_scripts":
@@ -20,10 +20,6 @@
 			"js": ["wordReplace.js"],
 			"run_at": "document_end"
 		}
-	],
-	"web_accessible_resources":
-	[
-		"warningPage.html"
 	],
 	"permissions":
 	[

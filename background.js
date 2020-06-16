@@ -1,24 +1,16 @@
-var URLStorage;
-
 function interceptRequest(request)
 {
   if(request && request.url)
   {
     if(request.type == "main_frame") // new page/site is loading in main window
     {
-        URLStorage = request.url;
-        return {redirectUrl: chrome.extension.getURL("warningPage.html")};
-    }
+     if(!confirm('WARNING: This company uses prison labor to manufacture their products. Proceed with caution'))
+     {
+       return {redirectUrl: "javascript:"};
+     }
+	  }
   }
 }
-
-function enterFunc() {
-	alert('test')
-}
-
-$(document).ready(function () {
-	$("#enterButton").click(enterFunc);
-});
 
 chrome.webRequest.onBeforeRequest.addListener(interceptRequest, {urls: ["*://tide.com/*", "*://bountytowels.com/*"]}, ['blocking']);
 
