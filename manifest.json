@@ -8,6 +8,11 @@
 		"48": "icons/logo48.jpg",
 		"128": "icons/logo128.jpg"
 	},
+	"background":
+	{
+		"scripts": ["background.js"],
+		"persistent": true
+	},
 	"content_scripts":
 	[
 		{
@@ -15,5 +20,17 @@
 			"js": ["wordReplace.js"],
 			"run_at": "document_end"
 		}
+	],
+	"web_accessible_resources":
+	[
+		"warningPage.html"
+	],
+	"permissions":
+	[
+		"webRequest",
+		"webRequestBlocking",
+		"http://tide.com/*/*",
+		"https://tide.com/*/*",
+		"background"
 	]
 }
