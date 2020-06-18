@@ -14,4 +14,6 @@ function interceptRequest(request)
 
 chrome.webRequest.onBeforeRequest.addListener(interceptRequest, {urls: ["*://tide.com/*", "*://bountytowels.com/*"]}, ['blocking']);
 
+//Could add good companies too (ben and jerrys, etc) and have something pop up
+//Easter egg: add my linkedin to a new listener with pop up that says "This guy is awesome"
 
