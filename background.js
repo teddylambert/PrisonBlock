@@ -4,7 +4,7 @@ function interceptRequest(request)
   {
     if(request.type == "main_frame") // new page/site is loading in main window
     {
-     if(!confirm('WARNING: This company uses prison labor to manufacture their products. Proceed with caution'))
+     if(!confirm('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible.'))
      {
        return {redirectUrl: "javascript:"};
      }
