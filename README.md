@@ -1,7 +1,7 @@
 # BadBusiness
 A Cloud-To-Butt look-alike for companies that use prison labor.
 
-If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at teddy.lambert@gatech.edu or, if you know git, create a pull request and add the company to the `companies.txt` file so we can review the addition!
+If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at teddy.lambert@gatech.edu or, if you know git, create a pull request and add the company to the `companies.md` file so we can review the addition! Before submitting a company, please read the 'Submitting Companies' section below.
 
 Thanks!
 
@@ -20,15 +20,16 @@ A pop-up will appear any time you try to access the website of a company that us
 5. Click on the folder and press select. The extension should now be added to chrome!
 6. You can now turn off developer mode and continue to use Chrome as normal
 
+
+# Submitting Companies
+If you know of a company that uses prison labor that we did not include on this list let us know! However, if you are going to submit a company, we ask that you*please include a recent source (< 1 year) that helps verify your claim*. Companies without sources will not be added at this time, as we want to make sure the companies on this list actually belong here. Much of what we have found online/on social media references articles from 5+ years ago, during which times the companies have changed their practices. This extension is meant only for companies *_currently_* benefitting from prison labor, as these are the companies that should be avoided and whose practices are most in need of change. Thank you!
 # Safari Version
 TODO
 
 # TODO
-2. Add company list
 3. Add all company domains to manifest
 4. Add all company domains to intercept background function
 5. Add all companies to word replace
-6. Add README about what happens when a new company is added
 8. Add how to use
 
 # Acknowledgements
