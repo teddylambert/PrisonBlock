@@ -17,6 +17,8 @@ We try to make sure that all of the companies on this list have a recent (< 1 ye
 - Viagra
 - Advil
 - ChapStick
+- Emergen-C
+- EpiPen
 
 
 **Company:** UPS  
@@ -54,9 +56,13 @@ benefit those involved in prison industries. Although the relationships between 
 - Post-It
 - Scotch-Brite
 - Scotch
+- Scotch Blue
+- Scotchgard
 - Nexcare
 - Command
 - Ace bandages
+- Filtrete
+- FUTURO
 
 **Company:** Avalon Eyewear  
 [**Source**](https://www.nationalcia.org/corporate-members)  
@@ -70,12 +76,28 @@ benefit those involved in prison industries. Although the relationships between 
 - Tyson
 - Jimmy Dean
 - Hillshire Farm
+- Hillshire snacking
 - Ballpark
-- Sara Lee
-- Bosco’s
-- Bonici
+- Raised and Rooted
+- Aidells
+- State Fair Corndogs
+- Nature Raised Farms
+- Sara Lee Deli
+- Wright Brand
+- Tyson Food Services (Bosco’s, Bonici, Mexican Original,)
+- Tyson Fresh Meats (Chairman's Reserve, Open Prarie, Star Ranch Angus, IBP, Reuben, Supreme Tender, Case Ready)
 - Gallo Salame
 - Lady Aster
+- Wunderbar
+- Advance Pierre
+- Barber Foods
+- Big Az
+- Fast Fixin
+- SteakEZE
+- Original Philly
+- Bryan Foods
+- True Chews
+- Nudges
 
 **Company:** Haystack Mountain  
 [**Source**](https://haystackmountaincheese.com/our-story/)  

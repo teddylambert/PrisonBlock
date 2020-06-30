@@ -31,6 +31,7 @@ TODO
 4. Add all company domains to intercept background function
 5. Add all companies to word replace
 8. Add how to use
+9. Check it works on windows
 
 # Acknowledgements
 The idea and initial company list are all thanks to Ella Lambert. I only dealt with helping turn the idea into an implementable reality.
