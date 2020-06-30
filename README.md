@@ -22,7 +22,7 @@ A pop-up will appear any time you try to access the website of a company that us
 
 
 # Submitting Companies
-If you know of a company that uses prison labor that we did not include on this list let us know! However, if you are going to submit a company, we ask that you*please include a recent source (< 1 year) that helps verify your claim*. Companies without sources will not be added at this time, as we want to make sure the companies on this list actually belong here. Much of what we have found online/on social media references articles from 5+ years ago, during which times the companies have changed their practices. This extension is meant only for companies *_currently_* benefitting from prison labor, as these are the companies that should be avoided and whose practices are most in need of change. Thank you!
+If you know of a company that uses prison labor that we did not include on this list let us know! However, if you are going to submit a company, we ask that you *please include a recent source (< 1 year) that helps verify your claim*. Companies without sources will not be added at this time, as we want to make sure the companies on this list actually belong here. Much of what we have found online/on social media references articles from 5+ years ago, during which times the companies have changed their practices. This extension is meant only for companies *_currently_* benefitting from prison labor, as these are the companies that should be avoided and whose practices are most in need of change. Thank you!
 # Safari Version
 TODO
 
