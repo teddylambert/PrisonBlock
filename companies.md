@@ -7,6 +7,8 @@ The companies in this list fall into one of three categories:
 
 We try to make sure that all of the companies on this list have a recent (< 1 year), reputable source to back up our claim. If a parent company is included on our list (such as Pfizer), its popular subsidiaries are included. However, if information can only be found on a single subsidiary, its parent company and other related subsidiaries are not included.
 
+Big thanks to Worth Rises and their [2020 edition of the The Prison Industry: Mapping Private Sector Players](https://worthrises.org/theprisonindustry2020) for many of the companies on this list. 
+
 ## Company List
 **Company:** Pfizer  
 [**Source**](https://www.alec.org/about/leadership/)  
