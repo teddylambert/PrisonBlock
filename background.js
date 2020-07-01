@@ -3,8 +3,8 @@ function interceptRequest(request)
   if(request && request.url)
   {
     if(request.type == "main_frame") // new page/site is loading in main window
-    { //Check if link can be added
-     if(!confirm('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.'))
+    { //TODO: Finish once branches have been merged
+     if(!confirm('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit ___'))
      {
        return {redirectUrl: "javascript:"};
      }

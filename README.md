@@ -12,8 +12,9 @@ Any companies that use prison labor have their name changed to "DON'T BUY" any t
 A pop-up will appear any time you try to access the website of a company that uses prison labor. The popup will make you confirm you want to be on the site to continue.
 
 # Installation Instructions
-1. Download the zip file above
-2. Unpack the zip and store the folder somewhere on your computer
+1. Go to https://github.com/teddylambert/PrisonBreak/
+2. Click on the green "Clone" button
+3. Press "Download ZIP"
 2. Open Chrome and go to **Window** -> **Extensions**
 3. Click on the slide switch in the top right corner to turn on developer mode
 4. A button that says "Load unpacked" should appear. Click that button, and navigate to where you stored the unzipped folder for the extension
