@@ -4,7 +4,7 @@ function interceptRequest(request)
   {
     if(request.type == "main_frame") // new page/site is loading in main window
     { //TODO: Finish once branches have been merged
-     if(!confirm('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit ___'))
+     if(!confirm('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit https://github.com/teddylambert/PrisonBlock/blob/master/companies.md'))
      {
        return {redirectUrl: "javascript:"};
      }

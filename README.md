@@ -28,11 +28,10 @@ If you know of a company that uses prison labor that we did not include on this 
 TODO
 
 # TODO
-3. Add all company domains to manifest
-4. Add all company domains to intercept background function
-5. Add all companies to word replace
 8. Add how to use
 9. Check it works on windows
+10. Fix target bug
+11. Fix google search bug
 
 # Acknowledgements
 The idea and initial company list are all thanks to Ella Lambert. I only dealt with helping turn the idea into an implementable reality.
