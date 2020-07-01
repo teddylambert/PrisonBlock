@@ -6,7 +6,7 @@ If you have any other companies that you know use prison labor and want added to
 Thanks!
 
 ## v1.0
-Any companies that use prison labor have their name changed to "DON'T BUY" any time it appears on a webpage".
+Any companies that use prison labor have their name changed to "PRISON BREAK" any time it appears on a webpage.
 
 ## v2.0
 A pop-up will appear any time you try to access the website of a company that uses prison labor. The popup will make you confirm you want to be on the site to continue.
