@@ -1,4 +1,4 @@
-# BadBusiness
+# Prison Block
 A Cloud-To-Butt look-alike for companies that use prison labor.
 
 If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at teddy.lambert@gatech.edu or, if you know git, create a pull request and add the company to the `companies.md` file so we can review the addition! Before submitting a company, please read the 'Submitting Companies' section below.
