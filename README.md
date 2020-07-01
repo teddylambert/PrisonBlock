@@ -12,7 +12,7 @@ Any companies that use prison labor have their name changed to "PRISON BREAK" an
 A pop-up will appear any time you try to access the website of a company that uses prison labor. The popup will make you confirm you want to be on the site to continue.
 
 # Installation Instructions
-1. Go to https://github.com/teddylambert/PrisonBreak/
+1. Go to https://github.com/teddylambert/PrisonBlock/
 2. Click on the green "Clone" button
 3. Press "Download ZIP"
 2. Open Chrome and go to **Window** -> **Extensions**
