@@ -18,7 +18,7 @@ A pop-up will appear any time you try to access the website of a company that us
 
 # Installation Instructions
 1. Go to https://github.com/teddylambert/PrisonBlock/
-2. Click on the green "Clone" button
+2. Click on the green "Code" button
 3. Press "Download ZIP"
 2. Open Chrome and go to **Window** -> **Extensions**
 3. Click on the slide switch in the top right corner to turn on developer mode
