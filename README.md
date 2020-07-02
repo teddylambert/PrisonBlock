@@ -1,7 +1,7 @@
 # Prison Block
 A web browser extension to notify users of companies that use and/or support prison labor and the prison-industrial complex.
 
-If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at teddy.lambert@gatech.edu or, if you know git, create a pull request and add the company to the `companies.md` file so we can review the addition! Before submitting a company, please read the 'Submitting Companies' section below.
+If you have any other companies that you know use prison labor and want added to the list, feel free to contact me at tclambert00@gmail.com or, if you know git, create a pull request and add the company to the `companies.md` file so we can review the addition! Before submitting a company, please read the 'Submitting Companies' section below.
 
 We are currently working on adding the extension to the Chrome Web Store so future updates are easier to install.
 
