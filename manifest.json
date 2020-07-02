@@ -23,8 +23,6 @@
 	],
 	"permissions":
 	[
-		"webRequest",
-		"webRequestBlocking",
 		"storage",
 		"background",
 		"tabs",
@@ -71,7 +69,7 @@
 		"*://www.aidells.com/*",
 		"*://www.corndogs.com/*",
 		"*://www.natureraisedfarms.com/*",
-		"*://www.saraleedeli.com/*",
+		"*://saraleedeli.com/*",
 		"*://www.wrightbrand.com/*",
 		"*://www.tysonfoodservice.com/*",
 		"*://www.tysonfreshmeats.com/*",

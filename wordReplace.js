@@ -19,7 +19,6 @@ function walk(node)
 				child = next;
 			}
 			break;
-
 		case 3: 
 			handleText(node);
 			break;
