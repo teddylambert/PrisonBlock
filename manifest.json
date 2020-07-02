@@ -25,6 +25,9 @@
 	[
 		"webRequest",
 		"webRequestBlocking",
+		"storage",
+		"background",
+		"tabs",
 		"*://www.pfizer.com/*",
 		"*://www.centrum.com/*",
 		"*://www.robitussin.com/*", 
@@ -83,7 +86,6 @@
 		"*://www.bryanfoods.com/*",
 		"*://www.truechews.com/*",
 		"*://www.nudgesdogtreats.com/*",
-		"*://www.haystackmountaincheese.com/*",
-		"background"
+		"*://www.haystackmountaincheese.com/*"
 	]
 }

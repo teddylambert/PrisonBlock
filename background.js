@@ -1,14 +1,27 @@
+var lastFire;
+
 function interceptRequest(request)
 {
-  if(request && request.url)
+  if(request && request.url && request) //TODO: check if current webpage is google, then dont fire
   {
-    if(request.type == "main_frame") // new page/site is loading in main window
-    { //TODO: Finish once branches have been merged
-     if(!confirm('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit https://github.com/teddylambert/PrisonBlock/blob/master/companies.md'))
-     {
-       return {redirectUrl: "javascript:"};
-     }
-	  }
+    var d = new Date();
+    var curTime = d.getTime(); //Get seconds since epoch
+    const url = new URL(request.url);
+    var uKey = url.hostname;
+    chrome.storage.sync.get([uKey], function (storedTime) {
+      lastFire = storedTime[uKey];
+      console.log("Key: " + uKey + ", Time:" + lastFire);
+    });
+    if(curTime >= (lastFire + 3600000) || lastFire === undefined)
+    {
+      chrome.storage.sync.set({[uKey]: curTime}, function () {
+        //console.log(curTime);
+      });
+      if(request.type == "main_frame") // new page/site is loading in main window
+      {
+        alert('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit https://github.com/teddylambert/PrisonBlock/blob/master/companies.md');
+      }
+    }
   }
 }
 
@@ -74,7 +87,6 @@ var badUrls = ["*://www.pfizer.com/*",
 ]
 
 chrome.webRequest.onBeforeRequest.addListener(interceptRequest, {urls: badUrls}, ['blocking']);
-
 //Could add good companies too (ben and jerrys, etc) and have something pop up
 //Easter egg: add my linkedin to a new listener with pop up that says "This guy is awesome"
 
