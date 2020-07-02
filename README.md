@@ -9,9 +9,12 @@ Thanks!
 
 ## v1.0
 Any companies that use prison labor have their name changed to "PRISON BLOCK" any time it appears on a webpage.
+![Image of Word Replace](icons/wordReplace.png)
 
 ## v2.0
 A pop-up will appear any time you try to access the website of a company that uses prison labor. After closing, the pop-up will sleep for 1 hour before appearing on that website again.
+![Image of Pop-Up](icons/popup.png)
+
 
 # Installation Instructions
 1. Go to https://github.com/teddylambert/PrisonBlock/
