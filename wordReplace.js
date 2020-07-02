@@ -1,5 +1,4 @@
 //Function from http://is.gd/mwZp7E
-
 walk(document.body);
 
 function walk(node)  
@@ -94,6 +93,7 @@ function handleText(textNode)
 	v = v.replace(/\bSteak-EZE\b/g, replacementText);
 	v = v.replace(/\bTrue Chews\b/g, replacementText);
 	v = v.replace(/\bNudges\b/g, replacementText); //False positive possibility
+	v = v.replace(/\bTeddy Lambert\b/g, "The Coolest Guy Ever"); // :)
 
 	textNode.nodeValue = v;
 }

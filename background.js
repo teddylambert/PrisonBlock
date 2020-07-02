@@ -1,3 +1,8 @@
+/* 
+Written by Teddy Lambert
+Last Modified: 7/02/2020
+*/
+
 var lastFire;
 var curTime;
 var d;
@@ -40,7 +45,6 @@ var badHosts = {"www.pfizer.com":0,
                "www.hillshirefarm.com":0,
                "www.hillshiresnacking.com":0,
                "www.ballparkbrand.com":0,
-               "www.dixie.com":0,
                "www.raisedandrooted.com":0,
                "www.aidells.com":0,
                "www.corndogs.com":0,
@@ -55,12 +59,12 @@ var badHosts = {"www.pfizer.com":0,
                "www.barberfoods.com":0,
                "www.bigazsandwiches.com":0,
                "www.fastfixin.com":0,
-               "www.steakeze.com":0,
-               "www.phillycheesesteak.com":0,
+               "steakeze.com":0,
+               "phillycheesesteak.com":0,
                "www.bryanfoods.com":0,
                "www.truechews.com":0,
                "www.nudgesdogtreats.com":0,
-               "www.haystackmountaincheese.com":0
+               "haystackmountaincheese.com":0
 }
 
 chrome.tabs.onUpdated.addListener(function (tabId, info, changeInfo) {
@@ -73,37 +77,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, info, changeInfo) {
       curTime = d.getTime();
       if(curTime >= (badHosts[hostString] + 3600000))
       {
-        console.log(hostString + ":" + badHosts[hostString]);
         alert('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit https://github.com/teddylambert/PrisonBlock/blob/master/companies.md');
         badHosts[hostString] = curTime;
-        console.log(hostString + ":" + badHosts[hostString]);
       }
-      else
-        console.log(hostString + ":" + badHosts[hostString] + " , no update");
     }
   }
 });
-
-/*
-d = new Date();
-      curTime = d.getTime(); //Get seconds since epoch
-      chrome.storage.sync.get([hostString], function (callback) {
-        console.log(callback);
-        if(typeof callback[hostString] === undefined)
-        {
-          lastFire = 0;
-        }
-        else
-        {  
-          lastFire = callback[hostString];
-        }
-        //console.log("Got key " + hostString + " with value " + lastFire);
-      });
-      if(curTime >= (lastFire + 3600000))
-      {
-        chrome.storage.sync.set({[hostString]: curTime}, function () {
-          //console.log("Key " + hostString + " set with time " + curTime);
-        });
-        alert('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit https://github.com/teddylambert/PrisonBlock/blob/master/companies.md');
-      }
-*/

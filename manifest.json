@@ -23,7 +23,6 @@
 	],
 	"permissions":
 	[
-		"storage",
 		"background",
 		"tabs",
 		"*://www.pfizer.com/*",
@@ -79,11 +78,11 @@
 		"*://www.barberfoods.com/*",
 		"*://www.bigazsandwiches.com/*",
 		"*://www.fastfixin.com/*",
-		"*://www.steakeze.com/*",
-		"*://www.phillycheesesteak.com/*",
+		"*://steakeze.com/*",
+		"*://phillycheesesteak.com/*",
 		"*://www.bryanfoods.com/*",
 		"*://www.truechews.com/*",
 		"*://www.nudgesdogtreats.com/*",
-		"*://www.haystackmountaincheese.com/*"
+		"*://haystackmountaincheese.com/*"
 	]
 }
