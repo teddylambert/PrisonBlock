@@ -7,79 +7,46 @@ var lastFire;
 var curTime;
 var d;
 var hostString;
-var badHosts = {"www.pfizer.com":0,
-               "www.centrum.com":0,
-               "www.robitussin.com":0, 
-               "www.viagra.com":0,
-               "www.advil.com":0,
-               "www.chapstick.com":0,
-               "www.emergenc.com":0,
-               "www.epipen.com":0,
-               "www.ups.com":0,
-               "www.kochind.com":0,
-               "www.molex.com":0,
-               "www.gp.com":0,
-               "www.angelsoft.com":0,
-               "www.brawny.com":0,
-               "www.dixie.com":0,
-               "www.mardigrasnapkins.com":0,
-               "www.quiltednorthern.com":0,
-               "www.sparkletowels.com":0,
-               "www.vanityfairnapkins.com":0,
-               "www.statefarm.com":0,
-               "www.3m.com":0,
-               "www.acebrand.com":0,
-               "www.command.com":0,
-               "www.filtrete.com":0,
-               "www.futuro-usa.com":0,
-               "www.nexcare.com":0,
-               "www.post-it.com":0,
-               "www.scotchbrand.com":0,
-               "www.scotchblue.com":0,
-               "www.scotch-brite.com":0,
-               "www.scotchgard.com":0,
-               "www.avaloneyewear.com":0,
-               "www.tysonfoods.com":0,
-               "www.tyson.com":0,
-               "www.jimmydean.com":0,
-               "www.hillshirefarm.com":0,
-               "www.hillshiresnacking.com":0,
-               "www.ballparkbrand.com":0,
-               "www.raisedandrooted.com":0,
-               "www.aidells.com":0,
-               "www.corndogs.com":0,
-               "www.natureraisedfarms.com":0,
-               "saraleedeli.com":0,
-               "www.wrightbrand.com":0,
-               "www.tysonfoodservice.com":0,
-               "www.tysonfreshmeats.com":0,
-               "www.delianytime.com":0,
-               "www.gallosalame.com":0,
-               "www.advancepierre.com":0,
-               "www.barberfoods.com":0,
-               "www.bigazsandwiches.com":0,
-               "www.fastfixin.com":0,
-               "steakeze.com":0,
-               "phillycheesesteak.com":0,
-               "www.bryanfoods.com":0,
-               "www.truechews.com":0,
-               "www.nudgesdogtreats.com":0,
-               "haystackmountaincheese.com":0
+
+// Contribution by Albert Portnoy (@asportnoy)
+// This is a link to a JSON file with the sites. An extension/browser reload should fetch from this URL for easy list updating.
+// You should replace this URL with the raw file on your repo.
+var badHostsFile = "https://raw.githubusercontent.com/asportnoy/PrisonBlock/master/badhosts.json"
+// This fetches the contents of the above file and stores it in the badHosts variable
+
+var badHosts = null;
+async function updateSites() {
+  return new Promise((resolve, reject) => {
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener('load', () => {
+      if (xhr.status !== 200) {
+        badHosts = null;
+        resolve();
+        return;
+      }
+      badHosts = JSON.parse(xhr.responseText);
+      resolve();
+    });
+    xhr.open("GET", badHostsFile);
+    xhr.send();
+  });
 }
 
-chrome.tabs.onUpdated.addListener(function (tabId, info, changeInfo) {
+chrome.tabs.onUpdated.addListener(async (tabId, info, changeInfo) => {
   if (info.status === 'complete') {
     var url = new URL(changeInfo.url);
     hostString = String(url.hostname);
-    if(hostString in badHosts)
-    {
+    if (!badHosts) await updateSites(); // If sites not found, load them.
+    if (!badHosts) return; // Sites still not found, ignore filter.
+    if (hostString in badHosts) {
       d = new Date();
       curTime = d.getTime();
-      if(curTime >= (badHosts[hostString] + 3600000))
-      {
+      if (curTime >= (badHosts[hostString] + 3600000)) {
         alert('WARNING: This company exploits and/or supports prison labor. Proceed with caution, and find an alternative brand if possible. Press OK to continue to the site.\n\nTo find more information on why this company was included, please visit https://github.com/teddylambert/PrisonBlock/blob/master/companies.md');
         badHosts[hostString] = curTime;
       }
     }
   }
 });
+
+updateSites(); // Initialize sites.
