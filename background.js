@@ -11,7 +11,7 @@ var hostString;
 // Contribution by Albert Portnoy (@asportnoy)
 // This is a link to a JSON file with the sites. An extension/browser reload should fetch from this URL for easy list updating.
 // You should replace this URL with the raw file on your repo.
-var badHostsFile = "https://raw.githubusercontent.com/asportnoy/PrisonBlock/master/badhosts.json"
+var badHostsFile = "https://raw.githubusercontent.com/teddylambert/PrisonBlock/master/badhosts.json"
 // This fetches the contents of the above file and stores it in the badHosts variable
 
 var badHosts = null;
