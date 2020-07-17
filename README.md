@@ -17,6 +17,8 @@ A pop-up will appear any time you try to access the website of a company that us
 
 
 # Installation Instructions
+Prison Block is now on the Chrome Web Store! Instead of following the instructions below, click [here](https://chrome.google.com/webstore/detail/prison-block/ppgdmnahhmhfblhipocnflhfhhllgbfl) and press the big blue "Add to Chrome" button!
+
 1. Go to https://github.com/teddylambert/PrisonBlock/
 2. Click on the green "Code" button
 3. Press "Download ZIP"
